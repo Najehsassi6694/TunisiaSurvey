@@ -1,0 +1,23 @@
+.footer2 {
+  background: #242424;
+  padding: 25px 0; }
+  .footer2 P {
+    text-align: center;
+    color: #707070;
+    font-size: 14px;
+    line-height: 15px; }
+    .footer2 P a {
+      color: #606265; }
+      .footer2 P a:hover, .footer2 P a:focus {
+        color: #fff; }
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media (max-width: 479px) {
+  footer P {
+    font-size: 12px;
+    line-height: 14px; } }
+
+/* Extra Small Devices, Phones */

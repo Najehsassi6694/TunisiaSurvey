@@ -1,0 +1,90 @@
+.page-int{
+.realisee {
+  background: #f7f6f6;
+  padding: 70px 0;
+
+
+  .body {
+    text-align: justify;
+    .text{
+    padding-right:100px;
+    h3 {
+      font-family: $rm;
+      font-size: 20px;
+      color: #010101;
+      margin: 0px 0 50px 0;
+      position: relative;
+
+      &:before {
+        content: '';
+        background-color: #e32239;
+        width: 30px;
+        height: 1px;
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -10px;
+      }
+       span {
+            font-family: $rexb;
+            font-size: 39px;
+            color: #e32239;
+            position: relative;   
+            }
+       }
+
+      p {
+        font-size: 24px;
+        font-family:$rm;
+        color: #3d3d3d;
+      }
+      .btn{
+      margin:35px 20px 0 0 ;
+      float:left;
+      display:inline-block;
+      }
+    }
+    }
+  &.white{
+  background:#fff;
+  }
+}
+
+}
+
+@media screen and (max-width: 768px) {
+.page-int .realisee {
+    padding: 30px 0;
+}
+
+.page-int .realisee .body .text {
+    padding-right: 0;
+}
+   .page-int .realisee .body .text h3 {
+      font-size: 20px;
+      margin: 0px 0 15px 0;
+    }
+    .page-int .realisee .body .text h3 span {
+    font-size: 22px;
+}
+    .page-int .realisee .body .text p {
+    font-size: 17px;
+}
+}
+
+@media screen and (max-width:479px) {
+.page-int .realisee {
+    padding: 30px 0;
+}
+   .page-int .realisee .body .text h3 {
+      font-size: 18px;
+      margin: 0px 0 15px 0;
+    }
+    .page-int .realisee .body .text p {
+    font-size: 15px;
+}
+.page-int .realisee .body .text .btn {
+    margin: 10px 0 20px 0;
+    max-width: inherit;
+}
+}

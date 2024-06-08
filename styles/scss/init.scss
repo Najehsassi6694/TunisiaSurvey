@@ -1,0 +1,53 @@
+//misc settings
+@import 'config/_settings';
+@import 'config/_mixins';
+//frameworks
+//global things
+@import 'general/_reset';
+@import 'layout/_main';
+
+
+
+// header
+@import 'pages/header.scss';
+// navbar
+@import 'pages/navbar.scss';
+// ariane
+@import 'pages/ariane.scss';
+// navigation
+@import 'pages/navigation.scss';
+// informations
+@import 'pages/informations.scss';
+//apropos 
+@import 'pages/apropos.scss';
+//partenaires 
+@import 'pages/partenaires.scss';
+// newsletter
+@import 'pages/newsletter.scss';
+
+// solution
+@import 'pages/solution.scss';
+// actualites
+@import 'pages/actualites.scss';
+// feedback
+@import 'pages/feedback.scss';
+
+//page apropos 
+@import 'pages/apropos-page.scss';
+//page actualites
+@import 'pages/actualites-page.scss';
+//page solutions
+@import 'pages/solutions-page.scss';
+//page details-actu
+@import 'pages/details-actu-page.scss';
+//page realisations
+@import 'pages/realisations-page.scss';
+//page demande
+@import 'pages/demande-page.scss';
+//page contact
+@import 'pages/contact-page.scss';
+
+
+
+// footer
+@import 'pages/footer.scss';

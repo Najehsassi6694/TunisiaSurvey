@@ -1,0 +1,81 @@
+.page-int{
+.solutions {
+  background: #f7f6f6;
+  padding: 50px 0;
+
+
+  .body {
+    text-align: justify;
+    h3 {
+      font-family: $rexb;
+      font-size: 39px;
+      color: #231f20;
+      margin: 0px 0 50px 0;
+      position: relative;
+
+      &:before {
+        content: '';
+        background-color: #e32239;
+        width: 30px;
+        height: 1px;
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -10px;
+      }
+    }
+      p {
+        font-size: 24px;
+       padding-right: 40px;
+
+        font-family:$rm;
+        color: #3d3d3d;
+      }
+      .btn{
+      margin:90px 0 0 0 ;
+      }
+    }
+  &.white{
+  background:#fff;
+  p {
+      
+       padding-right: 0px;
+
+        
+      }
+      img{
+      padding-right:50px;
+      }
+  }
+}
+
+}
+
+@media screen and (max-width: 768px) {
+.page-int .solutions {
+    padding: 70px 0;
+}
+   .page-int .solutions .body h3 {
+      font-size: 29px;
+      margin: 0px 0 15px 0;
+    }
+    .page-int .solutions .body p {
+    font-size: 19px;
+}
+}
+
+@media screen and (max-width:479px) {
+.page-int .solutions {
+    padding: 30px 0;
+}
+   .page-int .solutions .body h3 {
+      font-size: 24px;
+      margin: 0px 0 15px 0;
+    }
+    .page-int .solutions .body p {
+    font-size: 16px;
+}
+.page-int .solutions .body .btn {
+    margin: 30px 0 30px 0;
+}
+}

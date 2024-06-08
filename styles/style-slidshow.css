@@ -1,0 +1,313 @@
+.owl-carousel.cb-slideshow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.cb-slideshow div .anim_slid.anim_slid2,.cb-slideshow div .anim_slid.anim_slid3{
+	width:100%;
+	margin: 0;
+}
+.cb-slideshow div .anim_slid3 .btn{
+	display: inline-block;
+	margin: 40px 10px 0;
+}
+
+.cb-slideshow .lien{
+  font-size: 16px;
+  font-family: "ralewayregular";
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+ display: block;
+ width:100%;
+ margin-top: 10px;
+
+}
+/* .cb-slideshow div span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 1;
+    z-index: 0;
+	
+} */
+.cb-slideshow div .anim_slid {
+	z-index: 1000;
+	position: absolute;
+	bottom: 34%;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	opacity: 1;
+}
+
+.cb-slideshow .owl-controls {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    top: 60%;
+}
+.cb-slideshow div .anim_slid p {
+	font-family: 'ralewaylight';
+	font-size: 18px;
+	margin-bottom: 5px;
+	color: rgb(255, 255, 255);
+}
+
+.cb-slideshow div .anim_slid h2 {
+	font-size: 55px;
+	margin-top: 0px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-family: 'ralewayblack';
+	margin-bottom: 15px;
+}
+
+.cb-slideshow div .anim_slid h3 {
+	font-size: 24px;
+	margin-top: 0px;
+	color: #c2c2c2;
+	font-family: 'ralewayregular';
+}
+
+.cb-slideshow div .anim_slid h3 .h3top strong {
+	color: #e32239;
+	font-family: 'ralewaybold';
+}
+
+.cb-slideshow div:nth-child(1) span {
+	background-image: url(../images/slid1.jpg)
+}
+
+.cb-slideshow div:nth-child(2) span {
+	background-image: url(../images/slid1.jpg);
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
+}
+
+.cb-slideshow div:nth-child(3) span {
+	background-image: url(../images/slid1.jpg);
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-o-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
+}
+
+.cb-slideshow div:nth-child(4) span {
+	background-image: url(../images/slid1.jpg);
+	-webkit-animation-delay: 18s;
+	-moz-animation-delay: 18s;
+	-o-animation-delay: 18s;
+	-ms-animation-delay: 18s;
+	animation-delay: 18s;
+}
+
+.cb-slideshow div:nth-child(5) span {
+	background-image: url(../images/slid1.jpg);
+	-webkit-animation-delay: 24s;
+	-moz-animation-delay: 24s;
+	-o-animation-delay: 24s;
+	-ms-animation-delay: 24s;
+	animation-delay: 24s;
+}
+
+.cb-slideshow div:nth-child(6) span {
+	background-image: url(../images/slid1.jpg);
+	-webkit-animation-delay: 30s;
+	-moz-animation-delay: 30s;
+	-o-animation-delay: 30s;
+	-ms-animation-delay: 30s;
+	animation-delay: 30s;
+}
+
+.cb-slideshow div:nth-child(2) div {
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
+}
+
+.cb-slideshow div:nth-child(3) div {
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-o-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
+}
+
+.cb-slideshow div:nth-child(4) div {
+	-webkit-animation-delay: 18s;
+	-moz-animation-delay: 18s;
+	-o-animation-delay: 18s;
+	-ms-animation-delay: 18s;
+	animation-delay: 18s;
+}
+
+.cb-slideshow div:nth-child(5) div {
+	-webkit-animation-delay: 24s;
+	-moz-animation-delay: 24s;
+	-o-animation-delay: 24s;
+	-ms-animation-delay: 24s;
+	animation-delay: 24s;
+}
+
+.cb-slideshow div:nth-child(6) div {
+	-webkit-animation-delay: 30s;
+	-moz-animation-delay: 30s;
+	-o-animation-delay: 30s;
+	-ms-animation-delay: 30s;
+	animation-delay: 30s;
+}
+.cb-slideshow .owl-nav .owl-prev {
+	position: absolute;
+	left: 0;
+	top: 55%;
+  }
+
+  .cb-slideshow .owl-nav .owl-next {
+	position: absolute;
+	right: 0;
+	top: 55%;
+  }
+
+  .cb-slideshow .owl-nav .owl-prev .fa:before {
+	background: url(../images/arrow-left.png);
+	content: '';
+	display: block;
+	width: 27px;
+	height: 53px;
+  }
+
+  .cb-slideshow .owl-nav .owl-next .fa:before {
+	background: url(../images/arrow-right.png);
+	content: '';
+	display: block;
+	width: 27px;
+	height: 53px;
+  }
+
+.cb-slideshow .btn-red {
+	width: 177px;
+	height: 51px;
+	line-height: 51px;
+	font-size: 16px;
+	padding: 0;
+	margin: 50px 0 0 0;
+	font-family: "ralewayregular";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.cb-slideshow .btn-red:hover {
+	background: #fff !important;
+	color: red;
+}
+
+@media screen and (max-width: 1140px) {
+	.cb-slideshow div div h3 {
+		font-size: 100px
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media (max-width : 1199px) {}
+
+
+
+/* Medium Devices, Desktops */
+@media (max-width : 991px) {
+	.cb-slideshow div .anim_slid h2 {
+		font-size: 40px;
+	}
+
+	.cb-slideshow div .anim_slid h3 {
+		font-size: 17px;
+	}
+
+}
+
+
+/* Small Devices, Tablets */
+@media (max-width : 768px) {
+
+	.cb-slideshow .owl-nav .owl-next {
+		right: 0;
+	}
+	.cb-slideshow .owl-nav .owl-prev {
+		left: 0;
+	}
+	.cb-slideshow div .anim_slid {
+    left: 4%;
+    width: 96%;
+	bottom: 44%;
+}
+.owl-carousel .owl-item .image{
+ background-size: inherit !important;
+    background-position: center right !important;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media (max-width : 479px) {
+	.cb-slideshow div .anim_slid {
+		bottom: 49%;
+		width: 100%;
+		left: 0;
+	}
+
+	.cb-slideshow div .anim_slid h2 {
+		font-size: 25px;
+	}
+
+	.cb-slideshow div .anim_slid h3 {
+		font-size: 16px;
+	}
+
+	.owl-carousel .owl-nav .owl-next {
+
+		position: relative !important;
+		display: inline-block;
+		right: -10px !important;
+		top: 20px !important;
+
+	}
+
+	.owl-carousel .owl-nav .owl-prev {
+		left: -10px !important;
+		top: 20px !important;
+		position: relative !important;
+		display: inline-block;
+	}
+	.owl-carousel.cb-slideshow .owl-nav .owl-next{
+		position: absolute !important;
+		right: 0 !important;
+	}
+	.owl-carousel.cb-slideshow .owl-nav .owl-prev{
+		left: 0 !important;
+		position: absolute !important;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media (max-width : 319px) {}

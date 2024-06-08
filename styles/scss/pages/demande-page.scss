@@ -1,0 +1,130 @@
+.page-int{
+.demande {
+  background: #fff;
+  .body {
+    text-align: justify;
+    .demande-form{
+      background-color: #f9f8f8;
+      padding:75px 20px;
+      .demande-box{
+      margin:auto;
+      max-width:850px;
+      width:100%;
+      h3 {
+        font-family: $rbo;
+        font-size: 30px;
+        color: #222222;
+        margin: 0 0 85px 0;
+        position: relative;
+        text-align:center;
+        &:before {
+          content: '';
+          background-color: #e32239;
+          width: 30px;
+          height: 1px;
+          position: absolute;
+          display: block;
+          left: 50%;
+          bottom: -10px;
+        }
+      }
+      p {
+        font-size: 24px;
+        font-family:$rm;
+        color: #3e3e3e;
+      }
+      input[type='text'],
+      input[type='email'],
+      input[type='password'],
+      select,
+      textarea{
+        background-color: transparent;
+        border-width: 1px;
+        border-color: rgb(207, 207, 207);
+        border-style: solid;
+        border-radius: 0;
+        height: 51px;
+        font-size:16px;
+        color:#a7a7a7;
+        font-family: $rr;
+        margin-bottom: 0;
+        padding-left:25px;
+      
+
+
+      &:focus{
+        border-color: #ccc;
+      }
+    }
+      textarea{
+        height: 200px;
+      }
+    label {
+     color:#747474;
+      font-size:21px;
+        font-family: $rm;
+        .red{
+          color: #e32239;
+          font-size: 40px;
+          display: inline-block;
+          margin-left: 10px;
+        }
+    }
+    .textarea-grp{
+      textarea{
+        height :135px;
+        padding-top:20px;
+      }
+    }
+    .btn-red{
+      float:right;
+      
+    }     
+    .required{
+      color: #a7a7a7;
+      font-size: 13px;
+      margin-bottom: 20px;
+      display: block;
+      margin-top: 5px;
+      text-transform:uppercase;
+    }
+    }
+}
+  }
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+.page-int .demande .body .demande-form {
+    padding: 35px 20px;
+}
+.page-int .demande .body .demande-form .demande-box h3 {
+    font-size: 24px;
+    margin: 0 0 45px 0;
+}
+  .page-int .demande .body .demande-form .demande-box label {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:479px) {
+.page-int .demande .body .demande-form {
+    padding: 35px 20px;
+}
+.page-int .demande .body .demande-form .demande-box label {
+    font-size: 15px;
+}
+.page-int .demande .body .demande-form .demande-box label .red {
+    font-size: 30px;
+}
+.page-int .demande .body .demande-form .demande-box h3 {
+    font-size: 19px;
+}
+.page-int .demande .body .demande-form .demande-box input[type='text'], .page-int .demande .body .demande-form .demande-box input[type='email'], .page-int .demande .body .demande-form .demande-box input[type='password'], .page-int .demande .body .demande-form .demande-box select, .page-int .demande .body .demande-form .demande-box textarea {
+    height: 41px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+}

@@ -1,0 +1,192 @@
+.footer1 {
+	background-color: rgb(34, 34, 34);
+	padding: 38px 0;
+
+	ul {
+		float: right;
+		margin-top: 23px;
+		margin-bottom: 55px;
+li{
+	float:left;
+	position:relative;
+		a {
+			font-size: 16px;
+			font-family: $rbo;
+			color: #fff;
+			padding: 0 12px;
+			text-decoration: none;
+
+			
+	}
+	&.active,&:hover{
+				a{
+				color: #e32239;
+				:after{
+					content:'';
+					background-color: #e32239;
+					width: 30px;
+					height: 1px;
+					position: absolute;
+					display: block;
+					left: 27%;
+					bottom: -8px;
+					}
+				}
+			}
+	}
+	}
+
+	.coordonnee {
+		align-items: center;
+		justify-content: center;
+		background:#141414;
+		padding: 30px 20px;
+		margin-top:25px;
+		.col-md-4{
+			align-self:center;
+			background: url("../images/sep-footer.png") no-repeat left center;
+			&:first-child{
+			background:none;
+			}
+		}
+	}
+
+	.icon {
+		float: left;
+		margin-right: 10px;
+
+		.fa {
+			color: #fff;
+		}
+
+		&.icon1 {
+			margin-top: 6%;
+		}
+	}
+
+	p {
+		font-family: $rr;
+		color: #fff;
+		font-size: 14px;
+		line-height: 22px;
+
+		a {
+			color: #fff;
+
+			&:hover,
+			&:focus {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.footer2 {
+	background-color: rgb(34, 34, 34);
+	padding: 25px 0;
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	color: #fff;
+	font-family: $rr;
+	font-size: 15px;
+
+	.fa {
+		color: #fff;
+		opacity: .76;
+		padding: 0 12px;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+
+/* Large Devices, Wide Screens */
+@media (max-width : 1199px) {}
+
+
+
+/* Medium Devices, Desktops */
+@media (max-width : 991px) {
+	.footer1 {
+		ul {
+			margin-top: 0;
+			margin-bottom: 55px;
+
+			a {
+				font-size: 14px;
+				padding: 0 9px;
+				letter-spacing: -1px;
+			}
+		}
+
+		.coordonnee {
+			-webkit-box-align: flex-start;
+			-ms-flex-align: flex-start;
+			align-items: flex-start;
+			-webkit-box-pack: flex-start;
+			-ms-flex-pack: flex-start;
+			justify-content: flex-start;
+		}
+
+		p {
+			font-size: 13px;
+			line-height: 20px;
+		}
+	}
+
+}
+
+
+/* Small Devices, Tablets */
+@media (max-width : 768px) {
+	.footer1 {
+		padding: 20px 0 11px;
+		ul li.active a :after, ul li:hover a :after {
+		    bottom: 0;
+		}
+
+		.icon {
+			display: none;
+		}
+		.col-md-4{
+			margin-bottom: 10px;
+		}
+		.coordonnee {
+			text-align: center;
+		}
+
+		ul {
+			margin-bottom: 35px;
+		}
+	}
+
+	.footer2 {
+		padding: 15px 0;
+		font-size: 13px;
+
+		.fa {
+			padding: 0 7px;
+			margin-bottom: 7px;
+		}
+
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media (max-width : 479px) {
+	footer {
+		P {
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	.footer1 ul a {
+		font-size: 12px;
+		padding: 0px 4px;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media (max-width : 319px) {}

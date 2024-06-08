@@ -1,0 +1,320 @@
+.page-int{
+.actualites {
+  background: #fff;
+  padding: 0 0 90px 0;
+  overflow: hidden;
+
+    .title-actualites {
+      text-align: center;
+      color: #fff;
+
+      h3 {
+        font-family: 'ralewayextralight';
+        font-size: 60px;
+        color: #000;
+        margin: 0px 0 106px 0;
+        position: relative;
+
+        &:before {
+          content: '';
+          background-color: #000;
+          width: 30px;
+          height: 1px;
+          position: absolute;
+          display: block;
+          left: 50%;
+          bottom: -10px;
+        }
+      }
+
+      p {
+        font-family: avenirit;
+        font-size: 25px;
+
+      }
+    }
+
+    .body-actualites {
+
+    .float-sm {
+      position: absolute;
+      right: 0;
+      width: 35px;
+      top: 71px;
+      //opacity 0;
+      display: none;
+      z-index:9999;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease;
+      .fl-fl {
+        padding: 5px 0;
+        width: 100%;
+        position: relative;
+        right: 0;
+        height: 40px;
+        overflow: hidden;
+        z-index: 1000;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease;
+      }
+      span {
+        clear: left;
+        display: block;
+      }
+      .fa {
+        font-size: 20px;
+        color: #fff;
+        padding: 2px 0;
+        margin-left: 10px;
+        display: block;
+        float: left;
+      }
+
+     
+
+      .fl-fl a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 15px;
+        display: block;
+        text-decoration: none;
+        vertical-align: top !important;
+        float: left;
+        margin-top: 5px;
+      }
+
+      .float-fb {
+        top: 0;
+        left: 0;
+        background: #1c77c8;
+      }
+      .float-tw {
+        background: #00aeef;
+        top: 0;
+        right: 0;
+      }
+      .float-li {
+        background: #045e80;
+        top: 0;
+        right: 0;
+      }
+    }
+      .categories,.annee{
+          float: right;
+          display: block;
+          margin-right: 10px;
+          background: #efecea;
+          height: 41px;
+          padding: 0 40px;
+          border: none;
+          margin-bottom:50px;
+      }
+      .date{
+        font-size: 14px;
+        font-family: $rr;
+        color: rgb(227, 34, 57);
+        margin-top:10px;
+        position: relative;
+        &:after{
+          content:'';
+          background: rgb(227, 34, 57);
+          width: 38px;
+          height: 2px;
+          display:block;
+          bottom: -5px;
+          position: absolute;
+        }
+      }
+      .share{
+        background:url("../images/share.png") no-repeat;
+        width: 10px;
+        height: 11px;
+        display: inline-block;
+        margin: 5px 0 0 10px;
+      
+      }
+      img{
+      border:1px solid #ccc;
+      border-radius:5px;
+      }
+      figure {
+        position: relative;
+        float: left;
+        max-width: 376px;
+        padding: 12px 0;
+        cursor: pointer;
+        &:before {
+          content: '';
+          background: url("../images/icon-youtube.png");
+          z-index: 999;
+          width: 52px;
+          height: 52px;
+          display: block;
+          position: absolute;
+          top: 24%;
+          margin-bottom: 0;
+          left: 40%;
+        }
+        &.actu-img{
+        &:before {
+        display:none;
+        }
+        }
+      }
+
+      figure img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+      }
+
+      figure figcaption {
+      padding-bottom:20px;
+      }
+      figure figcaption>a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+      }
+
+     
+
+      figure h2,
+      figure p {
+        margin: 0;
+      }
+
+      figure p {
+        font-size: 68.5%;
+      }
+
+      figure.effect-actu h2 {
+        font-size: 24px;
+        color: #555555;
+        text-align: left;
+        font-weight: normal;
+        font-size: 24px;
+        font-family: 'ralewaymedium';
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+      }
+
+      figure.effect-actu p {
+        margin: 1em 0 0;
+        padding: 3em;
+        border: 1px solid #fff;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(0, 20px, 0) scale(1.1);
+        transform: translate3d(0, 20px, 0) scale(1.1);
+      }
+     
+
+      .actu-carousel .owl-nav .owl-prev {
+        position: absolute;
+        left: -35px;
+        top: 45%;
+      }
+
+      .actu-carousel .owl-nav .owl-next {
+        position: absolute;
+        right: -32px;
+        top: 45%;
+      }
+
+      .actu-carousel .owl-nav .owl-prev .fa:before {
+        background: url(../images/arrow-left-black.png);
+        content: '';
+        display: block;
+        width: 27px;
+        height: 53px;
+      }
+
+      .actu-carousel .owl-nav .owl-next .fa:before {
+        background: url(../images/arrow-right-black.png);
+        content: '';
+        display: block;
+        width: 27px;
+        height: 53px;
+      }
+
+
+    }
+  
+
+}
+}
+
+@media screen and (max-width: 768px) {
+.page-int .actualites .body-actualites figure:before {
+    top: 20%;
+    width: 32px;
+    height:32px;
+    background-size:100%;
+}
+.page-int .actualites .body-actualites .categories, .page-int .actualites .body-actualites .annee{
+  margin-bottom:50px;
+}
+  .page-int{
+  .actualites {
+      .title-actualites h3 {
+        font-size: 50px;
+        margin: 0px 0 80px 0;
+      }
+
+      .body-actualites {
+        figure.effect-actu {
+          h2 {
+            font-size: 17px;
+          }
+        }
+        figure {
+          max-width: 330px;
+          margin: auto;
+          min-height: auto;
+          padding-bottom: 40px;
+          float: none;
+        }
+      }
+    
+  }
+  }
+}
+
+@media screen and (max-width:479px) {
+.page-int .actualites .body-actualites .categories, .page-int .actualites .body-actualites .annee{
+  margin-bottom:30px;
+}
+  .page-int{
+  .actualites {
+     .body-actualites figure:before {
+        top: 25%;
+    }
+    .actu-carousel .owl-nav{
+      text-align: center;
+    }
+      .title-actualites h3 {
+        font-size: 33px;
+        margin: 0px 0 40px 0;
+      }
+    
+  }
+}
+}

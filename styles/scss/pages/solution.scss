@@ -1,0 +1,122 @@
+.solution {
+  padding: 90px 0;
+  overflow: hidden;
+
+  .header-besoins {
+    .title-besoins {
+      text-align: center;
+      color: black;
+
+      h3 {
+        font-family: 'ralewayextralight';
+        font-size: 60px;
+        color: #e32239;
+        position: relative;
+        margin: 0px 0 40px 0;
+
+        &:before {
+          content: '';
+          background-color: #e32239;
+          width: 30px;
+          height: 1px;
+          position: absolute;
+          display: block;
+          left: 50%;
+          bottom: -10px;
+        }
+      }
+
+      p {
+          font-family: $rr;
+          font-size: 23px;
+          color: #7a7a7a;
+          text-align: center;
+          margin: 0px 0 106px 0;
+        }
+    }
+
+    .body-besoins {
+      margin-top: 45px;
+      text-align:center;
+      .besoins-box{
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 3px 4.85px 0.15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      &:hover{
+          transform: translate3d(0, 0, 0) scale(1.05);
+      }
+      a {
+       padding:75px 0;
+         display: block;
+          text-decoration: none;
+      }
+      .title-cercle {
+        h5 {
+          font-size: 20px;
+          font-family: $rm;
+          text-align: center;
+          color: #696969;
+          margin: 12px 0 0 0;
+          letter-spacing:-0.3;
+        }
+      }
+}
+       
+      
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .solution {
+    padding: 60px 0;
+    .header-besoins {
+      .title-besoins {
+        h3 {
+          font-size: 50px;
+        }
+         p {
+            font-size: 18px;
+            margin: 0px 0 80px 0;
+        }
+      }
+
+      .body-besoins {
+     .besoins-box{
+       padding: 35px 0;
+       img{
+           max-height: 30px;
+       }
+       .title-cercle {
+          h5 {
+            font-size: 14px;
+          }
+        }
+      }
+       
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width:479px) {
+  .solution {
+    padding: 50px 0;
+    .header-besoins {
+      .title-besoins {
+        h3 {
+          font-size: 33px;
+          margin: 0px 0 40px 0;
+        }
+      }
+    }
+     .body-besoins {
+     .besoins-box{
+     margin-bottom:5px;
+     }
+     }
+  }
+}

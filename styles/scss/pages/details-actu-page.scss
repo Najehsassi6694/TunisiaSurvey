@@ -1,0 +1,207 @@
+.page-int{
+.details {
+  background: #fff;
+
+
+  .body {
+    text-align: justify;
+    .text{
+      background: #fbfbfb;
+      padding:30px 30px 30px 35px;
+      overflow:hidden;
+      h3 {
+          font-family: $rm;
+          font-size: 29px;
+          color: #0e0e0e;
+          margin: 0px 0 50px 0;
+          position: relative;
+      }
+      .date{
+        font-size: 14px;
+        font-family: $rr;
+        color: #555555;
+        margin-top:10px;
+        position: relative;
+        &:after{
+          content:'';
+          background: rgb(227, 34, 57);
+          width: 38px;
+          height: 2px;
+          display:block;
+          bottom: -5px;
+          position: absolute;
+        }
+      }
+      .share{
+        background:url("../images/share.png") no-repeat;
+        width: 10px;
+        height: 11px;
+        display: inline-block;
+        margin: 5px 0 0 10px;
+      
+      }
+       .float-sm {
+      position: absolute;
+      left: -35px;
+      width: 35px;
+      top: 150px;
+      //opacity 0;
+      display: none;
+      z-index:9999;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease;
+      .fl-fl {
+        padding: 5px 0;
+        width: 100%;
+        position: relative;
+        right: 0;
+        height: 40px;
+        overflow: hidden;
+        z-index: 1000;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease;
+      }
+      span {
+        clear: left;
+        display: block;
+      }
+      .fa {
+        font-size: 20px;
+        color: #fff;
+        padding: 2px 0;
+        margin-left: 10px;
+        display: block;
+        float: left;
+      }
+
+     
+
+      .fl-fl a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 15px;
+        display: block;
+        text-decoration: none;
+        vertical-align: top !important;
+        float: left;
+        margin-top: 5px;
+      }
+
+      .float-fb {
+        top: 0;
+        left: 0;
+        background: #1c77c8;
+      }
+      .float-tw {
+        background: #00aeef;
+        top: 0;
+        right: 0;
+      }
+      .float-li {
+        background: #045e80;
+        top: 0;
+        right: 0;
+      }
+    }
+        p {
+        font-size: 22px;
+        font-family:$rm;
+        color: #3d3d3d;
+      }
+      .btn{
+        margin: 50px 0 0 0;
+        float: right;
+      }
+    
+    }
+    .sidebar{
+    background: #fbfbfb;
+      padding:30px;
+    h2 {
+      font-family: $rexb;
+      font-size: 30px;
+      color: #3d3d3d;
+      margin: 0px 0 50px 0;
+      position: relative;
+
+      &:before {
+        content: '';
+        background-color: #e32239;
+        width: 30px;
+        height: 1px;
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -10px;
+      }
+      }
+      .sidebar-box{
+      margin-bottom:90px;
+        a {
+        font-family: $rm;
+        font-size: 20px;
+        color: #555555;
+        margin: 35px 0 0 0;
+        text-decoration:none;
+        position: relative;
+        }
+    }
+    }
+    }
+
+}
+
+}
+
+@media screen and (max-width: 768px) {
+.page-int .details {
+    padding: 70px 0;
+}
+   .page-int .details .body .text h3 {
+      font-size: 23px;
+      margin: 0px 0 15px 0;
+    }
+    .page-int .details .body .text p {
+    font-size: 19px;
+}
+.page-int .details .body .sidebar .sidebar-box a {
+    font-size: 16px;
+}
+.page-int .details .body .sidebar .sidebar-box {
+    margin-bottom: 40px;
+}
+.page-int .details .body .sidebar h2 {
+    font-size: 23px;
+}
+}
+
+@media screen and (max-width:479px) {
+.page-int .details .body .text {
+    padding: 20px;
+}
+    .page-int .details {
+        padding: 30px 0;
+    }
+   .page-int .details .body .text h3 {
+      font-size: 19px;
+      margin: 0px 0 15px 0;
+    }
+    .page-int .details .body .text p {
+      font-size: 15px;
+    }
+    .page-int .details .body .text .btn {
+        margin: 30px 0 30px 0;
+    }
+    .page-int .details .body .sidebar {
+        padding: 20px;
+    }
+    .page-int .details .body .sidebar .sidebar-box a {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,379 @@
+
+.section_md_header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  .navbar {
+    z-index: 4545;
+    border-radius: 0px;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+
+
+
+
+
+
+
+    .menu-links {
+      margin-top: 10px;
+      float: right;
+      clear: right;
+
+      a {
+        font-family: "avenir";
+        font-size: 16px;
+        padding: 0;
+
+        img {
+          margin-right: 10px;
+        }
+
+      }
+    }
+  }
+
+  a {
+    color: #000;
+  }
+
+  .menu-bottom {
+    background: rgba(231, 233, 233, 0.9);
+    padding: 20px 0 7px 0;
+    width: 100%;
+
+    .search {
+      float: right;
+
+      .btn-search {
+        float: right;
+        background: url("../images/btn-search.png") no-repeat;
+        display: block;
+        width: 25px;
+        height: 44px;
+        border: none;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .top-menu {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    padding: 9px 0;
+    z-index: 99;
+
+    .tel {
+      color: $red;
+
+      .fa {
+        margin-right: 10px;
+      }
+    }
+
+    .social {
+      float: right;
+
+      a {
+        margin-left: 10px;
+        color: $red;
+      }
+    }
+  }
+}
+.page-int .section_md_header{
+  height:138px;
+}
+.header_top {
+  .logo {
+    float: left;
+    position: relative;
+    z-index: 10000;
+  }
+
+
+}
+
+.main-nav {
+  float: right;
+  margin-top: 18px;
+
+  .mobile-menu {
+    background: url(../images/mobile-menu.png) no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    display: none;
+    margin: 2% 4% 0 0;
+    float: right;
+  }
+
+  .cl-effect-17 a {
+    text-shadow: none;
+  }
+
+  .cl-effect-17 a::before {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+  }
+
+  .cl-effect-17 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    transform: translateY(5px);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+  }
+
+  .cl-effect-17 a:hover::before,
+  .cl-effect-17 a:focus::before {
+    opacity: 0;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  .cl-effect-17 a:hover::after,
+  .cl-effect-17 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+.scroll-down {
+  text-align: center;
+  color: #fff;
+  font-family: 'AvenirLight';
+  font-size: 20px;
+  left: 48%;
+  left: calc(50% - 19px);
+  bottom: 1%;
+  position: absolute;
+}
+
+.scroll-down-link {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  height: 65px;
+  width: 35px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.ca3-scroll-down-link {
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  left: 9px;
+  top: 22px;
+  animation: ca3_fade_move_down 1.5s linear infinite;
+}
+
+/*animated scroll arrow animation*/
+@keyframes ca3_fade_move_down {
+  0% {
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media (max-width: 991px) {}
+
+/* Small Devices, Tablets */
+@media (max-width: 768px) {
+  .main-nav .mobile-menu {
+    display: block;
+  }
+
+  .main-nav ul.sf-menu {
+    display: none;
+  }
+
+  #navigation .sf-menu a {
+    font-size: 13px;
+  }
+
+  .header-mobile {
+    display: block;
+    position: relative;
+    z-index: 99999;
+    margin-top: -30px;
+  }
+
+  .form-search {
+    float: right;
+    margin-right: 50px;
+    width: 43%;
+  }
+
+  .section_md_header {
+    .menu-bottom {
+      padding: 52px 0 8px 0;
+
+      .search {
+        height: 30px;
+        position: relative;
+        z-index: 9999999;
+        margin-top: -10px;
+        margin-right: 50px;
+        .btn-search {
+          margin-top: 15px;
+        }
+      }
+
+    }
+  }
+
+  .header_top {
+    .logo {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+
+}
+/* overlay search
+   ========================================================================== */
+.openBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+
+/* Extra Small Devices, Phones */
+@media (max-width: 640px) {
+  .navbar-header {
+    text-align: center;
+    margin-left: 28%;
+  }
+
+  .form-search {
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media (max-width: 479px) {
+.section_md_header {
+    height: 530px;
+}
+  .navbar-header {
+    margin-left: 2%;
+    width: 60%;
+    margin-right: 0 !important;
+  }
+
+  .form-search {
+    float: none;
+    margin: auto;
+  }
+
+}
